@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hystrix-service</artifactId>
-    <description>
-            hystrix服务调用测试实例
-        
-            Spring Cloud Hystrix是Spring Cloud Netflix子项目的核心组件之一。具有服务容错容错及线程隔离等一系列服务保护功能
-            Hystrix实现了断路器模式，具备服务降级，服务熔断，线程隔离，请求缓存，请求合并及服务监控等强大功能
-    </description>
+    <artifactId>feign-service</artifactId>
 
     <properties>
         <java.version>1.8</java.version>
@@ -27,12 +21,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -40,28 +32,10 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>4.6.3</version>
-        </dependency>
-
-
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-
-
     </dependencies>
-
-
 
     <dependencyManagement>
         <dependencies>
@@ -75,7 +49,6 @@
         </dependencies>
     </dependencyManagement>
 
-
     <build>
         <plugins>
             <plugin>
@@ -84,6 +57,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
