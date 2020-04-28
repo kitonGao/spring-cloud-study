@@ -16,7 +16,7 @@ public interface UserService {
     CommonResult<User> getUser(@PathVariable(value = "id") Long id);
 
     @GetMapping("/user/getByUsername")
-    CommonResult<User> getByUsername(@RequestParam String username);
+    CommonResult<User> getByUsername(@RequestParam(value = "username") String username);
 
     @PostMapping("/user/update")
     CommonResult update(@RequestBody User user);

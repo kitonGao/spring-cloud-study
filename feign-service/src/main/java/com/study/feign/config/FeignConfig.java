@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @program: spring-cloud-study
- * @description:
+ * @description:  配置Feign打印最详细的Http请求日志信息
  * @author: gaojme
  * @create: 2020-04-27 18:13
  */

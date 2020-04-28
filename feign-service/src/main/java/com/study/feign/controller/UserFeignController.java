@@ -27,7 +27,7 @@ public class UserFeignController {
     }
 
     @GetMapping("/getByUsername")
-    public CommonResult getByUsername(@RequestParam String username) {
+    public CommonResult getByUsername(@RequestParam(value = "username") String username) {
         return userService.getByUsername(username);
     }
 
